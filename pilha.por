@@ -7,7 +7,13 @@ inteiro pilha[4]
 
 	funcao inicio()
 	{
-	      push(3)
+		//Àrea de testes
+		push(5)
+	     push(7)
+	     push(2)
+	     mostrar()
+	     pop()
+	     mostrar()
 
 	}
 	//Adiciona um elemento na pilha, assinatura da função
@@ -28,6 +34,18 @@ inteiro pilha[4]
 			escreva("A pilha está vazia")
 			
 		}
+	
+	  }
+		funcao mostrar(){
+		se(topo!=-1){
+		     para(inteiro i=topo;i>=0;i--){
+		     	escreva(pilha[i],"\n")
+		     }
+		     escreva("\n")
+		}senao{
+			escreva("A pilha está vazia")
+			
+		}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -35,9 +53,9 @@ inteiro pilha[4]
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 569; 
+ * @POSICAO-CURSOR = 308; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {topo, 4, 8, 4}-{pilha, 6, 8, 5}-{elemento, 14, 21, 8};
+ * @SIMBOLOS-INSPECIONADOS = {topo, 4, 8, 4}-{pilha, 6, 8, 5}-{elemento, 20, 21, 8};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
